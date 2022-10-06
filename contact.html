@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="contact.css" />
+        <script src="bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">RESUME</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarText"
+                    aria-controls="navbarText"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
+                                class="nav-link active"
+                                aria-current="page"
+                                href="contact.html"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Navbar text with an inline element
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div id="formBox">
+            <form action="results.html" class="was-validated" method="get">
+                <div class="mb-3 mt-3" id="display">
+                  <label for="name" class="form-label">Name:</label>
+                  <input type="text" class="form-control" id="name" placeholder="First Last" name="name" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="mb-3" id="display">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@email.com" name="email" required>
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="form-group" id="display">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="We need you on the team!!"></textarea>
+                  </div>
+                
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Submit
+                </button>
+                </div>
+            </form>
+        </div>    
+    </body>
+</html>
